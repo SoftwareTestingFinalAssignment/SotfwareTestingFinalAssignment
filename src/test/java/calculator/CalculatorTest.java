@@ -3,6 +3,8 @@ package calculator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.Assert.assertEquals;
+
 
 class CalculatorTest {
 
@@ -56,18 +58,15 @@ class CalculatorTest {
         Assertions.assertEquals(expectedRes, res);
     }
 
-    /*
     @Test
     void divideBy0(){
         //This checks for the arithmetic exception when we divide by 0
         //We wrote Exception.class so we were able to capture more exceptions
         //but with ArithmethicException.class could be more precise in this case
         Calculator calc = new Calculator();
-        Assert.assertThrows(Exception.class, () -> {
-            calc.divide(1,0);
-        });
+        double resultDiv = calc.divide(3,0);
+        assertEquals("Divide by zero gives infinity as result", true, Double.isInfinite(resultDiv));
     }
-    */
 
     @Test
     void add2Matrices(){
@@ -100,7 +99,7 @@ class CalculatorTest {
         int column = 4;
         int valueMat1 = 2;
         int valueMat2 = 1;
-        int valueMat3 = 3;
+        int valueMat3 = 1;
         Calculator calc = new Calculator();
         String res,expectedRes;
         MatrixOperation matrix1 = new MatrixOperation(row,column);
