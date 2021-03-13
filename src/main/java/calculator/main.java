@@ -8,8 +8,10 @@ public class main {
         int var2 = 5;
         int var3 = 7;
         int var4 = -4;
+        double var5 = 6.6666;
+        double var6 = 3;
 
-        int result;
+        double result;
         int row = 2;
         int column = 2;
         MatrixOperation matrix_result = new MatrixOperation(row,column);
@@ -36,7 +38,7 @@ public class main {
         result = calculator.multiply(var1,var4);
         System.out.println("Multiply: "+result);
 
-        result = calculator.divide(var3, var2);
+        result = calculator.divide(var5, var6);
         System.out.println("Divide: "+result);
 
         matrix_result = calculator.add(matrix1, matrix2);
