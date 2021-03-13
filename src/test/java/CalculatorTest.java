@@ -1,5 +1,5 @@
-package calculator;
-
+import calculator.Calculator;
+import calculator.MatrixOperation;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -60,9 +60,6 @@ class CalculatorTest {
 
     @Test
     void divideBy0(){
-        //This checks for the arithmetic exception when we divide by 0
-        //We wrote Exception.class so we were able to capture more exceptions
-        //but with ArithmethicException.class could be more precise in this case
         Calculator calc = new Calculator();
         double resultDiv = calc.divide(3,0);
         assertEquals("Divide by zero gives infinity as result", true, Double.isInfinite(resultDiv));
