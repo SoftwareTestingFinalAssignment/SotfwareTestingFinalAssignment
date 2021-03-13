@@ -6,7 +6,7 @@ public class main {
 
         double var1 = 3;
         double var2 = 5;
-        double var3 = 7;
+        double var3 = -8;
         double var4 = -4;
         double var5 = 6.6666;
         double var6 = 3;
