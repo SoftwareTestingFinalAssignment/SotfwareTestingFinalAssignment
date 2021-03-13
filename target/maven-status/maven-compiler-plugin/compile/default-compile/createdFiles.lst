@@ -1,4 +1,4 @@
-calculator/main.class
-calculator/Calculator.class
-calculator/Matrix.class
-calculator/MatrixOperation.class
+calculator\MatrixOperation.class
+calculator\main.class
+calculator\Matrix.class
+calculator\Calculator.class
