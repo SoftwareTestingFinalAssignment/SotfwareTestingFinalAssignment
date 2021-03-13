@@ -4,10 +4,10 @@ public class main {
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
 
-        int var1 = 3;
-        int var2 = 5;
-        int var3 = 7;
-        int var4 = -4;
+        double var1 = 3;
+        double var2 = 5;
+        double var3 = 7;
+        double var4 = -4;
         double var5 = 6.6666;
         double var6 = 3;
 

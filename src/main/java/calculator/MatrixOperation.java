@@ -2,8 +2,6 @@ package calculator;
 
 public class MatrixOperation{
     private Matrix matrix;
-    private int row;
-    private int column;
 
     public MatrixOperation(int row, int column){
         matrix = new Matrix(row, column);
@@ -23,11 +21,11 @@ public class MatrixOperation{
     }
 
 
-    public int getValue ( int row, int column ){
+    public double getValue ( int row, int column ){
         return matrix.getValue(row, column);
     }
 
-    public Matrix setValue (int row, int column, int value ){
+    public Matrix setValue (int row, int column, double value ){
         Matrix matrix_result = new Matrix(matrix.setValue(row, column, value));
         return matrix_result;
     }

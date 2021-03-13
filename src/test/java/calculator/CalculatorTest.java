@@ -2,7 +2,6 @@ package calculator;
 
 import org.junit.Assert;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
 

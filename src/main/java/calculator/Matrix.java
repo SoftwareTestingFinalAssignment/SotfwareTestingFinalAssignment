@@ -3,17 +3,17 @@ package calculator;
 import java.util.Arrays;
 
 public class Matrix {
-    private int [][] matrix;
+    private double [][] matrix;
     private int row;
     private int column;
 
     public Matrix(int row, int column){
         this.row = row;
         this.column = column;
-        matrix = new int[row][column];
+        matrix = new double[row][column];
     }
 
-    public Matrix (int [][] matrix){
+    public Matrix (double[][] matrix){
         this.matrix = matrix;
         row = matrix.length;
         column = matrix[0].length;
@@ -27,11 +27,11 @@ public class Matrix {
         return row;
     }
 
-    public int getValue ( int row, int column ){
+    public double getValue ( int row, int column ){
         return matrix[row][column];
     }
 
-    public int[][] setValue (int row, int column, int value ){
+    public double[][] setValue (int row, int column, double value ){
         matrix[row][column] = value;
         return matrix;
     }

@@ -1,15 +1,15 @@
 package calculator;
 
 public class Calculator {
-    public int add (int n1, int n2){
+    public double add (double n1, double n2){
         return n1+n2;
     }
 
-    public int substract (int n1, int n2){
+    public double substract (double n1, double n2){
         return n1-n2;
     }
 
-    public int multiply (int n1, int n2){
+    public double multiply (double n1, double n2){
         return n1*n2;
     }
 
@@ -24,7 +24,7 @@ public class Calculator {
         int m2_column = m2.getColumn();
 
         MatrixOperation result_matrix = new MatrixOperation(m1_row, m1_column);
-        int result_value;
+        double result_value;
 
         if ( m1_row == m2_row && m1_column == m2_column ) {
             for (int i = 0; i < m1_row; i++) {
@@ -47,7 +47,7 @@ public class Calculator {
         int m2_column = m2.getColumn();
 
         MatrixOperation result_matrix = new MatrixOperation(m1_row, m1_column);
-        int result_value;
+        double result_value;
 
         if ( m1_row == m2_row && m1_column == m2_column ) {
             for (int i = 0; i < m1_row; i++) {
