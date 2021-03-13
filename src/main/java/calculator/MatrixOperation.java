@@ -42,4 +42,12 @@ public class MatrixOperation{
     public String toString() {
         return matrix.toString();
     }
+
+    public boolean isRowMatrix (){
+        return getColumn()==0;
+    }
+
+    public boolean isColumnMatrix (){
+        return getRow()==0;
+    }
 }

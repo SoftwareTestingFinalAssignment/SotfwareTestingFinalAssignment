@@ -1,5 +1,5 @@
-import calculator.Calculator;
-import calculator.MatrixOperation;
+package calculator;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
