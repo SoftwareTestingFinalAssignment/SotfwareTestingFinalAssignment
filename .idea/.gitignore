@@ -2,4 +2,4 @@
 /shelf/
 /workspace.xml
 /Jenkinsfile
-/inputFiles.lst
+/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
