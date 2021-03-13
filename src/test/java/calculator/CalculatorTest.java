@@ -3,7 +3,6 @@ package calculator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
 
 
 class CalculatorTest {
@@ -62,7 +61,7 @@ class CalculatorTest {
     void divideBy0(){
         Calculator calc = new Calculator();
         double resultDiv = calc.divide(3,0);
-        assertEquals("Divide by zero gives infinity as result", true, Double.isInfinite(resultDiv));
+        Assertions.assertEquals(true, Double.isInfinite(resultDiv));
     }
 
     @Test
