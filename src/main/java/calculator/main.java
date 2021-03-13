@@ -4,6 +4,11 @@ public class main {
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
 
+        int var1 = 3;
+        int var2 = 5;
+        int var3 = 7;
+        int var4 = -4;
+
         int result;
         int row = 2;
         int column = 2;
@@ -22,16 +27,16 @@ public class main {
         }
 
         // Checking operations
-        result = calculator.add(2,3);
+        result = calculator.add(var2, var1);
         System.out.println("Add: "+result);
 
-        result = calculator.substract(4, 5);
+        result = calculator.substract( var1, var3);
         System.out.println("Substract: "+result);
 
-        result = calculator.multiply(2,3);
+        result = calculator.multiply(var1,var4);
         System.out.println("Multiply: "+result);
 
-        result = calculator.divide(4, 5);
+        result = calculator.divide(var3, var2);
         System.out.println("Divide: "+result);
 
         matrix_result = calculator.add(matrix1, matrix2);
