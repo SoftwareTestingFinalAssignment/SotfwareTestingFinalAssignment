@@ -75,7 +75,7 @@ class CalculatorTest {
         double value1 = 3;
         double value2 = 0;
         double resultDiv = calc.divide(value1,value2);
-        Assertions.assertEquals(true, Double.isInfinite(resultDiv));
+        Assertions.assertTrue(Double.isInfinite(resultDiv));
     }
 
     @Test
