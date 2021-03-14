@@ -9,6 +9,8 @@ class CalculatorTest {
 
     @Test
     void add2Numbers() {
+        // We are testing if the addition process is completed successfully
+        // In this example we are testing that 3 = 1 + 2
         Calculator calc = new Calculator();
         double expectedRes = 3;
         double value1 = 1;
@@ -19,6 +21,8 @@ class CalculatorTest {
 
     @Test
     void substract2Numbers(){
+        // We are testing if the subtraction process is completed successfully
+        // In this example we are testing that 2 = 3 - 1
         Calculator calc = new Calculator();
         double expectedRes = 2;
         double value1 = 3;
@@ -29,6 +33,8 @@ class CalculatorTest {
 
     @Test
     void multiply2Numbers(){
+        // We are testing if the multiplication process is completed successfully
+        // In this example we are testing that 6 = 3 - 1
         Calculator calc = new Calculator();
         double expectedRes = 6;
         double value1 = 3;
@@ -39,6 +45,8 @@ class CalculatorTest {
 
     @Test
     void multiplyBy0(){
+        // We are testing if the multiplication process works properly when one operator is 0
+        // In this example we are testing that 0 = 3 * 0
         Calculator calc = new Calculator();
         double expectedRes = 0;
         double value1 = 3;
@@ -49,6 +57,8 @@ class CalculatorTest {
 
     @Test
     void divide2Numbers(){
+        // We are testing if the division process is completed successfully
+        // In this example we are testing that 2 = 6 / 3
         Calculator calc = new Calculator();
         double expectedRes = 2;
         double value1 = 6;
@@ -59,13 +69,19 @@ class CalculatorTest {
 
     @Test
     void divideBy0(){
+        // We are testing if the division process is completed successfully
+        // In this example we are testing that Infinity = 3 / 0
         Calculator calc = new Calculator();
-        double resultDiv = calc.divide(3,0);
-        Assertions.assertTrue(Double.isInfinite(resultDiv));
+        double value1 = 3;
+        double value2 = 0;
+        double resultDiv = calc.divide(value1,value2);
+        Assertions.assertEquals(true, Double.isInfinite(resultDiv));
     }
 
     @Test
     void add2Matrices(){
+        // We are testing if the addition of matrices is completed successfully
+        // In this example we are testing if [3 3 3 3],[3 3 3 3],[3 3 3 3],[3 3 3 3] = [1 1 1 1],[1 1 1 1],[1 1 1 1],[1 1 1 1] + [2 2 2 2],[2 2 2 2],[2 2 2 2],[2 2 2 2]
         int row = 4;
         int column = 4;
         int valueMat1 = 2;
@@ -91,6 +107,8 @@ class CalculatorTest {
 
     @Test
     void substract2Matrices(){
+        // We are testing if the subtraction of matrices is completed successfully
+        // In this example we are testing if [1 1 1 1],[1 1 1 1],[1 1 1 1],[1 1 1 1] = [2 2 2 2],[2 2 2 2],[2 2 2 2],[2 2 2 2] - [1 1 1 1],[1 1 1 1],[1 1 1 1],[1 1 1 1]
         int row = 4;
         int column = 4;
         int valueMat1 = 2;
@@ -116,6 +134,8 @@ class CalculatorTest {
 
     @Test
     void substract2MatricesWithNegativeValuesAsResult(){
+        // We are testing if the subtraction of matrices which return negative values as result
+        // In this example we are testing if [-1 -1 -1 -1],[-1 -1 -1 -1],[-1 -1 -1 -1],[-1 -1 -1 -1] = [2 2 2 2],[2 2 2 2],[2 2 2 2],[2 2 2 2] - [3 3 3 3],[3 3 3 3],[3 3 3 3],[3 3 3 3]
         int row = 4;
         int column = 4;
         int valueMat1 = 2;
@@ -141,6 +161,8 @@ class CalculatorTest {
 
     @Test
     void add2MatricesWithDiffernentDimensions(){
+        // We are testing how does the addition of two matrices work
+        // In this example we are testing if null = [2 2 2 2],[2 2 2 2],[2 2 2 2],[2 2 2 2] + [1 1 1 ],[1 1 1],[1 1 1]
         int row = 4;
         int column = 4;
         int row2 = 3;
@@ -167,6 +189,8 @@ class CalculatorTest {
 
     @Test
     void substract2MatricesWithDiffernentDimensions(){
+        // We are testing how does the subtraction of two matrices work
+        // In this example we are testing if null = [2 2 2 2],[2 2 2 2],[2 2 2 2],[2 2 2 2] - [1 1 1 ],[1 1 1],[1 1 1]
         int row = 4;
         int column = 4;
         int row2 = 3;
@@ -192,6 +216,8 @@ class CalculatorTest {
 
     @Test
     void add2MatricesWithoutFillingTheSecondOne(){
+        // We are testing if the addition of matrices is completed successfully when we don´t establish the values of the matrix
+        // In this example we are testing if null = [2 2 2 2],[2 2 2 2],[2 2 2 2],[2 2 2 2] + [1 1 1 ],[1 1 1],[1 1 1]
         int row = 4;
         int column = 4;
         int valueMat = 2;
@@ -213,7 +239,9 @@ class CalculatorTest {
     }
 
     @Test
-    void substract2MatricesWithoutFillingTheSecondOne(){
+    void subtract2MatricesWithoutFillingTheSecondOne(){
+        // We are testing if the subtraction of matrices is completed successfully when we don´t establish the values of the matrix
+        // In this example we are testing if null = [2 2 2 2],[2 2 2 2],[2 2 2 2],[2 2 2 2] + [2 2 2],[2 2 2],[2 2 2]
         int row = 4;
         int column = 4;
         int valueMat = 2;
