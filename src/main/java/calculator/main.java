@@ -7,7 +7,7 @@ public class main {
 
         Calculator calculator = new Calculator();
 
-        double var0 = 2;
+        double var0 = 0;
         double var1 = 6;
         double var2 = 4;
         double var3 = -3;
