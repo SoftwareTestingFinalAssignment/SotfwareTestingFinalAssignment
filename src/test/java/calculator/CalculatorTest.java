@@ -20,7 +20,7 @@ class CalculatorTest {
     }
 
     @Test
-    void substract2Numbers(){
+    void subtract2Numbers(){
         // We are testing if the subtraction process is completed successfully
         // In this example we are testing that 2 = 3 - 1
         Calculator calc = new Calculator();
@@ -106,7 +106,7 @@ class CalculatorTest {
     }
 
     @Test
-    void substract2Matrices(){
+    void subtract2Matrices(){
         // We are testing if the subtraction of matrices is completed successfully
         // In this example we are testing if [1 1 1 1],[1 1 1 1],[1 1 1 1],[1 1 1 1] = [2 2 2 2],[2 2 2 2],[2 2 2 2],[2 2 2 2] - [1 1 1 1],[1 1 1 1],[1 1 1 1],[1 1 1 1]
         int row = 4;
@@ -133,7 +133,7 @@ class CalculatorTest {
     }
 
     @Test
-    void substract2MatricesWithNegativeValuesAsResult(){
+    void subtract2MatricesWithNegativeValuesAsResult(){
         // We are testing if the subtraction of matrices which return negative values as result
         // In this example we are testing if [-1 -1 -1 -1],[-1 -1 -1 -1],[-1 -1 -1 -1],[-1 -1 -1 -1] = [2 2 2 2],[2 2 2 2],[2 2 2 2],[2 2 2 2] - [3 3 3 3],[3 3 3 3],[3 3 3 3],[3 3 3 3]
         int row = 4;
@@ -160,7 +160,7 @@ class CalculatorTest {
     }
 
     @Test
-    void add2MatricesWithDiffernentDimensions(){
+    void add2MatricesWithDifferentDimensions(){
         // We are testing how does the addition of two matrices work
         // In this example we are testing if null = [2 2 2 2],[2 2 2 2],[2 2 2 2],[2 2 2 2] + [1 1 1 ],[1 1 1],[1 1 1]
         int row = 4;
@@ -188,7 +188,7 @@ class CalculatorTest {
 
 
     @Test
-    void substract2MatricesWithDiffernentDimensions(){
+    void subtract2MatricesWithDifferentDimensions(){
         // We are testing how does the subtraction of two matrices work
         // In this example we are testing if null = [2 2 2 2],[2 2 2 2],[2 2 2 2],[2 2 2 2] - [1 1 1 ],[1 1 1],[1 1 1]
         int row = 4;

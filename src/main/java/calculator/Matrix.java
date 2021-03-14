@@ -1,11 +1,10 @@
 package calculator;
 
-import java.util.Arrays;
 
 public class Matrix {
-    private double [][] matrix;
-    private int row;
-    private int column;
+    private final double [][] matrix;
+    private final int row;
+    private final int column;
 
     public Matrix(int row, int column){
         this.row = row;
@@ -23,10 +22,6 @@ public class Matrix {
         return column;
     }
 
-    public int getRow() {
-        return row;
-    }
-
     public double getValue ( int row, int column ){
         return matrix[row][column];
     }
@@ -38,15 +33,15 @@ public class Matrix {
 
     @Override
     public String toString() {
-        String array_tostring = "";
+        StringBuilder array_tostring = new StringBuilder();
         for (int i = 0; i < row; i++) {
-            array_tostring += "[ ";
+            array_tostring.append("[ ");
             for (int j = 0; j < column; j++ ){
                 if (j < column-1)
-                    array_tostring += matrix [i][j]+ ", ";
-                else array_tostring += matrix [i][j];
+                    array_tostring.append(matrix[i][j]).append(", ");
+                else array_tostring.append(matrix[i][j]);
             }
-            array_tostring += " ]";
+            array_tostring.append(" ]");
         }
         return "[ " + array_tostring + " ]";
     }

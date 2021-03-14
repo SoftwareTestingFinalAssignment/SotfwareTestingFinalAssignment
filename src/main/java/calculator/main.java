@@ -38,7 +38,7 @@ public class main {
         System.out.println("Add: "+result);
 
         result = calculator.subtract( var1, var3);
-        System.out.println("Substract: "+result);
+        System.out.println("Subtract: "+result);
 
         result = calculator.multiply(var1,var4);
         System.out.println("Multiply: "+result);
@@ -50,7 +50,7 @@ public class main {
         System.out.println("Add array: "+matrix_result);
 
         matrix_result = calculator.subtract(matrix1, matrix2);
-        System.out.println("Substract array: "+matrix_result);
+        System.out.println("Subtract array: "+matrix_result);
     }
 
 }
