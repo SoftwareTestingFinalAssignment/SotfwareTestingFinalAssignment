@@ -3,6 +3,8 @@ package calculator;
 public class main {
     public static void main(String[] args) {
 
+        // Variable declaration
+
         Calculator calculator = new Calculator();
 
         double var0 = 2;
@@ -35,7 +37,7 @@ public class main {
         result = calculator.add(var2, var1);
         System.out.println("Add: "+result);
 
-        result = calculator.substract( var1, var3);
+        result = calculator.subtract( var1, var3);
         System.out.println("Substract: "+result);
 
         result = calculator.multiply(var1,var4);
@@ -47,7 +49,7 @@ public class main {
         matrix_result = calculator.add(matrix1, matrix2);
         System.out.println("Add array: "+matrix_result);
 
-        matrix_result = calculator.substract(matrix1, matrix2);
+        matrix_result = calculator.subtract(matrix1, matrix2);
         System.out.println("Substract array: "+matrix_result);
     }
 

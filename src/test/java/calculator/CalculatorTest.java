@@ -23,7 +23,7 @@ class CalculatorTest {
         double expectedRes = 2;
         double value1 = 3;
         double value2 = 1;
-        double res = calc.substract(value1,value2);
+        double res = calc.subtract(value1,value2);
         Assertions.assertEquals(expectedRes, res);
     }
 
@@ -109,7 +109,7 @@ class CalculatorTest {
                 matrix3.setValue(i, j, valueMat3);
             }
         }
-        res = calc.substract(matrix1,matrix2).toString();
+        res = calc.subtract(matrix1,matrix2).toString();
         expectedRes = matrix3.toString();
         Assertions.assertEquals(expectedRes,res);
     }
@@ -134,7 +134,7 @@ class CalculatorTest {
                 matrix3.setValue(i, j, valueMat3);
             }
         }
-        res = calc.substract(matrix1,matrix2).toString();
+        res = calc.subtract(matrix1,matrix2).toString();
         expectedRes = matrix3.toString();
         Assertions.assertEquals(expectedRes,res);
     }
@@ -187,7 +187,7 @@ class CalculatorTest {
                 matrix2.setValue(i, j, valueMat2);
             }
         }
-        Assertions.assertNull(calc.substract(matrix1,matrix2));
+        Assertions.assertNull(calc.subtract(matrix1,matrix2));
     }
 
     @Test
@@ -229,7 +229,7 @@ class CalculatorTest {
                 matrix3.setValue(i, j, valueMat);
             }
         }
-        res = calc.substract(matrix1,matrix2).toString();
+        res = calc.subtract(matrix1,matrix2).toString();
         expectedRes = matrix3.toString();
         Assertions.assertEquals(expectedRes,res);
     }
