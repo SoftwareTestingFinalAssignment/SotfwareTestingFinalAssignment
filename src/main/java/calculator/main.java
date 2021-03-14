@@ -2,19 +2,22 @@ package calculator;
 
 public class main {
     public static void main(String[] args) {
+
         Calculator calculator = new Calculator();
 
-        double var1 = 3;
-        double var2 = 5;
-        double var3 = -2;
-        double var4 = -4;
-        double var5 = 6.6666;
-        double var6 = 3;
+        double var0 = 2;
+        double var1 = 6;
+        double var2 = 4;
+        double var3 = -3;
+        double var4 = -2;
+        double var5 = 0;
+
 
         double result;
-        int row = 2;
-        int column = 2;
-        MatrixOperation matrix_result = new MatrixOperation(row,column);
+        int row = 3;
+        int column = 3;
+        new MatrixOperation(row, column);
+        MatrixOperation matrix_result;
 
         // Initialize matrix
         int counter = 0;
@@ -38,7 +41,7 @@ public class main {
         result = calculator.multiply(var1,var4);
         System.out.println("Multiply: "+result);
 
-        result = calculator.divide(var5, var6);
+        result = calculator.divide(var5, var0);
         System.out.println("Divide: "+result);
 
         matrix_result = calculator.add(matrix1, matrix2);

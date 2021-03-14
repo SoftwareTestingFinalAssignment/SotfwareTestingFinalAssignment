@@ -62,4 +62,24 @@ public class Calculator {
             return null;
         }
     }
+
+    /*public Object multiply (MatrixOperation m1, MatrixOperation m2){
+        int m1_row = m1.getRow();
+        int m1_column = m1.getColumn();
+        int m2_row = m2.getRow();
+        int m2_column = m2.getColumn();
+
+        if ( m1.isRowMatrix() || m1.isColumnMatrix() || m2.isColumnMatrix() ){
+            // Base case
+            return new MatrixOperation(m1_row, m2_column);
+        }
+        else if ( m1_row == 1 && m1_column == 1 && m2_column == 1){
+            // Multiply the only element in m1 and the first element in m2
+            return multiply(m1.getValue(0, 0), m2.getValue(0,0));
+        }
+        else{
+            return null;
+        }
+    }*/
+
 }
