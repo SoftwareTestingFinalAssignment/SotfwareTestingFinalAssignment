@@ -61,7 +61,7 @@ class CalculatorTest {
     void divideBy0(){
         Calculator calc = new Calculator();
         double resultDiv = calc.divide(3,0);
-        Assertions.assertEquals(true, Double.isInfinite(resultDiv));
+        Assertions.assertTrue(Double.isInfinite(resultDiv));
     }
 
     @Test
